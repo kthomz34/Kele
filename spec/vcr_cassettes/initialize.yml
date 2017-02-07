@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 26 Jan 2017 23:18:20 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"4db44b82eb389cbe9b7bdbc07e6f85aa"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=yqDYKHrLumvHnZ3%2BFYckW%2BXOAxNzqzi68lIs9IILJaI%3D; path=/; secure
+      - _BlocAlpha_session2=dnZUb1dGZUY4bENycTZaZFArTEg4UXJRSjY1RHdtUFhKa3hlTmxqT1p2WC9jUGluejROazJSMXZWaGFuT0VyNjFYWlNZVW5WT3hQQU02UktTYllrVFpUbWl1bTlFYzBpOWQ3aC9hdVlMZS9MRlNuWUxrelovS2EzOTQvUmxYSUhHQ3B6RnByQzVhTFhGbnV6djNhN0hXby80Z094aXdYNEsySFhPSk12ZXIyd1kvMnkyVXVqT3Job0t6ZTBMakRxaGp6cTc5L1Yxd3A2YThWbStiMlFZZz09LS1GVi9DMndGVjN0Ym53SW5abVJmVnJRPT0%3D--6f373c32a19bcbc5deec4f311ad8a4f43d6b0541;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=430a8a60-5d03-4207-89f9-d737152f8660; path=/; expires=Fri, 27 Jan
+        2017 03:18:20 -0000; secure
+      - ahoy_visitor=3e93c135-e2d3-488a-bc2c-983184b87ae9; path=/; expires=Sat, 26
+        Jan 2019 23:18:20 -0000; secure
+      X-Request-Id:
+      - 241fc9cc-fd90-4025-afac-bf85b13fbdc2
+      X-Runtime:
+      - '0.123140'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY","user":{"id":2345150,"email":"kurt.thomas34@gmail.com","created_at":"2016-06-21T18:44:42.106-04:00","updated_at":"2017-01-26T17:53:07.110-05:00","facebook_id":null,"first_name":"Kurt","last_name":"Thomas","role":"user","stripe_customer_id":"cus_8gKGlmVjWBbRys","twitter_handle":"kthomz34","skype_handle":null,"github_handle":"kthomz34","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"image.jpg","photo_content_type":"image/jpeg","photo_file_size":950803,"photo_updated_at":"2016-07-05T13:27:23.247-04:00","send_new_message_emails":true,"referred_by_id":null,"slug":"kurt-thomas","os":"Windows","last_seen_at":"2017-01-26T17:53:06.917-05:00","private_profile":false,"google_plus_id":null,"linkedin":null,"quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5014,"phone_num":"(781)
+        718-4068","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"Agrund","birthdate":"1990-07-13","gender":"Male","first_visit_id":null,"codewars_handle":"kurt.thomas34"}}'
+    http_version: 
+  recorded_at: Thu, 26 Jan 2017 23:18:21 GMT
+recorded_with: VCR 3.0.3
