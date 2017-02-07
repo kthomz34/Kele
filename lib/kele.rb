@@ -1,7 +1,8 @@
 require 'httparty'
+require 'roadmap'
 
 class Kele
-
+  include Roadmap
   include HTTParty
 
 
@@ -20,16 +21,6 @@ class Kele
     @mentor_availability = JSON.parse(response.body)
   end
   
-  def get_roadmap(roadmap_id)
-    response = self.class.get(api_end_point("/roadmaps/#{roadmap_id}"), headers: { "authorization" => @auth_token })
-    @roadmap = JSON.parse(response.body)
-  end
-  
-  def get_checkpoint(checkpoint_id)
-    response = self.class.get(api_end_point("/checkpoints/#{checkpoint_id}"), headers: { "authorization" => @auth_token })
-    @checkpoint = JSON.parse(response.body)
-  end
-  
   def get_messages(messages)
     response = self.class.get(api_end_point('/message_threads'), headers: { "authorization" => @auth_token })
     @message = JSON.parse(response.body)
@@ -38,6 +29,11 @@ class Kele
   def create_message(sender, recipient_id, token, subject, stripped_text)
     response = self.class.post(api_end_point('/messages'), body: { sender: sender, recipient_id: recipient_id, token: token, subject: subject, "stripped-text": stripped_text} , headers: { "authorization" => @auth_token })
     @create_message = JSON.parse(response.body)
+  end
+  
+  def create_submission(assignment_branch, assignment_commit_link, checkpoint_id, comment, enrollment_id)
+    response = self.class.post(api_end_point('/checkpoint_submissions'), body: { assignment_branch: assignment_branch, assignment_commit_link: assignment_commit_link, checkpoint_id: checkpoint_id, comment: comment, enrollment_id: enrollment_id }, headers: { "authorization" => @auth_token })
+    @create_submission = JSON.parse(response.body)
   end
 
   private

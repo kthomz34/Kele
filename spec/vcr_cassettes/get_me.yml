@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 19:10:22 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1a90b2e9387c9305b1c622460581a659"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=4UUsGF%2FDsM06%2BqyJsstnCjo0zOEuemEVzF1kLlyC4r0%3D; path=/; secure
+      - _BlocAlpha_session2=aDBJRkl1emNwMlFLSkVaQThKYUduci8wbHpmSEhqM3l1Yzh2bkl2cjNiZ0x1SlZTS05YbnBxeWRiMEczTU9CQmhHU2VtSGhQcFVlb2lnSFBGMTNrU21zUUFNZnFISDBpdHRFVmtWbVpqaFZqUmNDZkZWZUFSaW5SSTQ0Wm12MnBuZ3kwOG50SE14S3A2YmhBZGJWUTFlRW0rTVlLNTMrNmlqYVpuYTJrZlIxKy96clA4S1VidmM1WDFzaUNlUnBsUVVJNUpzWXBaYW5mdnpPU1NzUWNnZz09LS1xSHZzSTZKZFlMMXdnNENUanY4NTNnPT0%3D--899f6faadf8165f3a01393e273253814c89c05f0;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=eb959c0d-c83d-4730-94a9-21e926f601fa; path=/; expires=Tue, 07 Feb
+        2017 23:10:23 -0000; secure
+      - ahoy_visitor=8e0de84f-f382-4726-b421-61f63c0b2eb7; path=/; expires=Thu, 07
+        Feb 2019 19:10:23 -0000; secure
+      X-Request-Id:
+      - 76adb75a-a341-4572-907c-a29084395bf1
+      X-Runtime:
+      - '0.191236'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY","user":{"id":2345150,"email":"kurt.thomas34@gmail.com","created_at":"2016-06-21T15:44:42.106-07:00","updated_at":"2017-02-07T10:04:02.007-08:00","facebook_id":null,"first_name":"Kurt","last_name":"Thomas","role":"user","stripe_customer_id":"cus_8gKGlmVjWBbRys","twitter_handle":"kthomz34","skype_handle":null,"github_handle":"kthomz34","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"image.jpg","photo_content_type":"image/jpeg","photo_file_size":950803,"photo_updated_at":"2016-07-05T10:27:23.247-07:00","send_new_message_emails":true,"referred_by_id":null,"slug":"kurt-thomas","os":"Windows","last_seen_at":"2017-02-07T10:04:01.938-08:00","private_profile":false,"google_plus_id":null,"linkedin":null,"quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5014,"phone_num":"(781)
+        718-4068","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"Agrund","birthdate":"1990-07-13","gender":"Male","first_visit_id":null,"codewars_handle":"kurt.thomas34"}}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 19:10:23 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 19:10:23 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1b6c5b231dcf1f73eb64072527cef80d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=Ad5SJvGKbuhtZala%2BbffaYsUzXShRE2rUEX3Q2c1Lcw%3D; path=/; secure
+      - _BlocAlpha_session2=UGw5bENoVWxRMmlxRktGK0RxSXRFWDdWYlNjbFBGVVBhbHplWWZBWW9vcmt2WU0wM2FpSVFXanVpRnVVblFDTUpZSEZXRTZEaENVckVlWlFPZ1o0ZTBtbW15WlZrUFNDdHBoQVVFQXA2MUYxOWM3VlNVNUJ6L1hYYkpoOWFMVlkvQmtIdi9FRW1DR3hzVGtxMHgxcUVjTjZMeEpkY0xCa3h0SGdxY1hmbzFOM1JybE1KS0Q4YitZSVF6Sy9aWjU2N1VDVjgzaUZiR0F3YitxSnJkMU03RGFJeXZ1V0tBdWR2V29hYTFWeTNva3JKaVZsaEpxTFZ0TCt2TUIrb05BMzF4R1JDRnljWWk5Wm1QUnZJeEs2VWNHSHNrMkJMZVN4ODBLWjhydkZvUUJuY2pVMTNZa2dldVlURUlKL0lUTVEtLXdNd00rdGNhMDZBYWxiMGdBczZHYlE9PQ%3D%3D--b4e2c57ad2b4f5dba2a93880598e70397d582ee7;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=1949fd98-f692-445d-8471-6264808f2eae; path=/; expires=Tue, 07 Feb
+        2017 23:10:23 -0000; secure
+      - ahoy_visitor=fb16fadd-5aca-4147-b4e5-385e88ac60ab; path=/; expires=Thu, 07
+        Feb 2019 19:10:23 -0000; secure
+      X-Request-Id:
+      - cab42e41-4739-4670-abdf-622254c8a4ff
+      X-Runtime:
+      - '0.152892'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":2345150,"slug":"kurt-thomas","name":"Kurt Thomas","email":"kurt.thomas34@gmail.com","title":null,"first_name":"Kurt","last_name":"Thomas","facebook_id":null,"url":"/users/kurt-thomas","bio":null,"course":{"id":50,"name":"Part-Time
+        Web Developer Track","length":54,"kind":"part_time_web_dev_track","appointments_per_week":1},"current_enrollment":{"id":19590,"created_at":"2016-11-26T08:41:20.975Z","updated_at":"2017-02-06T20:18:01.896Z","cohort_id":null,"status":"active","mentor_id":623967,"deleted":false,"onboarded":true,"dropped_out_at":null,"birth_date":"2016-11-26T08:41:20.958Z","roadmap_id":37,"course_end_date":"2017-05-15T07:00:00.000Z","course_start_date":"2016-07-04T07:00:00.000Z","death_date":null,"sent_get_started_email":false,"course_id":50,"old_visit_id":null,"certified":false,"locked_message":"","latest":true,"chain_id":5014,"roadmap_ref":"11af8519-6246-45f5-87b7-6607f82fd92e|0","visit_id":"953929d3-5912-43d1-90fc-81bc9de878f5"},"quota":0,"quota_limit":0,"type":"Student","status":"active","image_src":"https://cdn-photos.bloc.io/original/2345150/image.jpg?1467739643","large_image_src":"https://cdn-photos.bloc.io/large/2345150/image.jpg?1467739643","created_at":"2016-06-21
+        22:44:42 UTC","facebook_profile_picture_url":"http://graph.facebook.com//picture?width=110\u0026height=110","github_handle":"kthomz34","codecademy_handle":"Agrund","student":true,"time_zone":{"name":"Eastern
+        Time (US \u0026 Canada)","string":"(GMT-05:00) Eastern Time (US \u0026 Canada)","identifier":"America/New_York"}}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 19:10:23 GMT
+recorded_with: VCR 3.0.3

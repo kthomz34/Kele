@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 19:19:58 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6496300eb79f1a458b30f5b032c01e8f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=dDBCOSh4cWXeAGk3rp1DSdidnQtPznW0Tk2%2BNRPCgXg%3D; path=/; secure
+      - _BlocAlpha_session2=YzA5YkRkWHVaZVNVWjNZUGdlRnFQVnloejdMSGM5Nmk3YzR5RXVjODBVWlhwaldnajNzcHJTRE9oUXNMb3NpMjJ2b3NGeXVmNGE1Sys3ajRKRjRaTTdzN3krZzJHdzFEcXJjZ1JzeTF6VTM1Ry82VXZXVTZpVGZWa3R0cGQyYkY4Tzh2d3lCUVRJMFRxWStJZ2pFTFBsQ3RDblhJcHRSbXlNVVVPNmJvNkZvWDZXVHRLZy9oYmJmMkdXM1VtM1JXb2ZvNWFTNWw5NUhqTEJxZWNCOXl1dz09LS1iamlZdkZFYTgxcW5TMXJOSFJyYUVBPT0%3D--9f00e224540cb846b18ef64f4ec89177883812ce;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=e219c05c-e24a-4df2-8f6a-88c68336f98c; path=/; expires=Tue, 07 Feb
+        2017 23:19:58 -0000; secure
+      - ahoy_visitor=4f13e601-e704-4730-bf6f-9674d8da3e57; path=/; expires=Thu, 07
+        Feb 2019 19:19:58 -0000; secure
+      X-Request-Id:
+      - 7e845012-28a3-4224-b777-e2cbb9fef867
+      X-Runtime:
+      - '0.148390'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY","user":{"id":2345150,"email":"kurt.thomas34@gmail.com","created_at":"2016-06-21T22:44:42.106Z","updated_at":"2017-02-07T19:10:23.683Z","facebook_id":null,"first_name":"Kurt","last_name":"Thomas","role":"user","stripe_customer_id":"cus_8gKGlmVjWBbRys","twitter_handle":"kthomz34","skype_handle":null,"github_handle":"kthomz34","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"image.jpg","photo_content_type":"image/jpeg","photo_file_size":950803,"photo_updated_at":"2016-07-05T17:27:23.247Z","send_new_message_emails":true,"referred_by_id":null,"slug":"kurt-thomas","os":"Windows","last_seen_at":"2017-02-07T19:10:23.614Z","private_profile":false,"google_plus_id":null,"linkedin":null,"quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5014,"phone_num":"(781)
+        718-4068","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"Agrund","birthdate":"1990-07-13","gender":"Male","first_visit_id":null,"codewars_handle":"kurt.thomas34"}}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 19:19:59 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/mentors/<MENTOR_ID>/student_availability
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 19:19:59 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"80e370ade8034fd2d33326d3a14252c4"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=su4GJrEy8NcplDbbeb49JDJ0Lhsx2ecYybTffor1nVo%3D; path=/; secure
+      - _BlocAlpha_session2=OTdUeUNVUlA1eVVmT3N5M2I4TUJCL3hkd1pvMEZ5ZktCcXhabFlCTjROZjRVd0lLMUx3UEhKbkhvQ3JXVkhRQVVTeUZCT2hDNlZKY2JhNnh6dERYWUpoMTB4bHIyM2hGcnA1MDN1Mjg2SjRkSkVOem4rdjFnSTlnU3BxdTlJSlBCcTNYbzF4SC96eW5xUTRxY0hMKyttSGNTK21Zc0JZbUIxODBBYzVZeGREL3Y1Rzh0N0N1NWhhZmVvVjI0b1BvUnRPTTNndWFhcjRGb25qYlFQZ0t2T2gwR2ZzK2F2UHlkOWV5QWNZZ1RSM3cyV0p5Kzd0b3IzUG9UM1Q1amgwcEtsY0ZKN29FdXFQSUpiVzhFa1lCWjB6dkg4dEI3eGtsMkhaRmRtSExLb2diL1ZIbGRDWWdFN254b2c5a3I5QjItLW53cjBhV2VGMTA2ZTJXc0s5OU9vWVE9PQ%3D%3D--565c1adb7b07f51daacd54531cd99896eedcc4b4;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=4ff972dd-d9ba-4d91-970c-b4d03e3f6d2a; path=/; expires=Tue, 07 Feb
+        2017 23:19:59 -0000; secure
+      - ahoy_visitor=dbaf225f-d1ee-449f-8634-411ea5b2a170; path=/; expires=Thu, 07
+        Feb 2019 19:19:59 -0000; secure
+      X-Request-Id:
+      - dfb8da10-ab39-4577-be10-db0e21b55d16
+      X-Runtime:
+      - '0.248975'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":15208,"starts_at":"2017-02-09T00:00:00.000Z","ends_at":"2017-02-09T00:29:59.000Z","week_day":4,"booked":null},{"id":15210,"starts_at":"2017-02-09T01:00:00.000Z","ends_at":"2017-02-09T01:29:59.000Z","week_day":4,"booked":null},{"id":15217,"starts_at":"2017-02-09T23:00:00.000Z","ends_at":"2017-02-09T23:29:59.000Z","week_day":4,"booked":true}]'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 19:19:59 GMT
+recorded_with: VCR 3.0.3
