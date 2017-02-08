@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 20:21:30 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c626d09c4a1b83f4c4f85eeb1bc607aa"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=8HJLLBvHW8SQcMB7AaDvcfrsVR52hvnrNAtXWjIcE%2BA%3D; path=/; secure
+      - _BlocAlpha_session2=bmJnNWd1RllTMnhVNVZOZDBQUXZtb0RHTXpmQXZtNkpaWVFibmJEOGJJdWJxN0ptK01IakZrNmVLM0wxZG5OTXNDRnVISy9zWlNzY1JiV05Mb1dscjBBVnpPVEpiOUxaRDdERzZObkVUdGcvblpyRldpV2V0cTYyaTZlVjYrVlJndm5nb0hVMldsOEhXQ29zTjdrSndYU2NCV2pBSlViY1lBUGJ3eTVHN1NFY212S29UOExFR21aaFgyL3h5TGw4OStJVUlMVldVcmtvc1JHTGtGL1hVQT09LS1Wc2sycDJmSmg0c2dkNitNSWNobGJnPT0%3D--56ba35c254dadd8eae31957e253d579d581e55d0;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=1174bf53-acb6-4845-971b-683858c424bf; path=/; expires=Wed, 08 Feb
+        2017 00:21:30 -0000; secure
+      - ahoy_visitor=a626245c-4ff8-4ee6-a6db-bd3f064d3faf; path=/; expires=Thu, 07
+        Feb 2019 20:21:30 -0000; secure
+      X-Request-Id:
+      - da3f1349-97bb-467f-8179-7a0c9ae73da5
+      X-Runtime:
+      - '0.118471'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY","user":{"id":2345150,"email":"kurt.thomas34@gmail.com","created_at":"2016-06-21T15:44:42.106-07:00","updated_at":"2017-02-07T12:18:47.584-08:00","facebook_id":null,"first_name":"Kurt","last_name":"Thomas","role":"user","stripe_customer_id":"cus_8gKGlmVjWBbRys","twitter_handle":"kthomz34","skype_handle":null,"github_handle":"kthomz34","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"image.jpg","photo_content_type":"image/jpeg","photo_file_size":950803,"photo_updated_at":"2016-07-05T10:27:23.247-07:00","send_new_message_emails":true,"referred_by_id":null,"slug":"kurt-thomas","os":"Windows","last_seen_at":"2017-02-07T12:16:21.277-08:00","private_profile":false,"google_plus_id":null,"linkedin":null,"quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5014,"phone_num":"(781)
+        718-4068","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"Agrund","birthdate":"1990-07-13","gender":"Male","first_visit_id":null,"codewars_handle":"kurt.thomas34"}}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 20:21:30 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/message_threads
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 20:34:36 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b5df0658c978461bfbd57706b50a3f23"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=ga76hjm3cgpqZAppc0dtPdmDXNHCja%2BrQWTjdhp%2Fs2U%3D; path=/; secure
+      - _BlocAlpha_session2=ZEdNMVE3Nzh0NitVUjYrcUw4ODc0ME5lWGM1REsycDJzdmZSTnRCL1U4Mzhna1U0NFZCRUZ1bHdpS2prTmZDN0pHczlHaGQ0UzI3ZWhZYzdsSnZSNno2TjdQNVkxK0c5V2JsSUhnd0IrbDdsYlNGK01DQ0lBSGVQbStybkVGYW1rQWdkdVdCSVdJaDdyT2k1NHAyRDF0dFJ0SWtvZTgraVBldjJjdDBDRmE4RjJwbE1WOUEzZVlrejNvT29zWXFiZFZxbVhhdi9ONUowZzBXdXVWZk42Y282NFBpL2x3ek45b0FkVzJWa05UeDJIdnFWSVc1M3Q0RzJkSzFLQXAwT3JUeklMekdLZk5yYmw4eVdTa1M3L2orZ1ZDYTh2THVwd0VlWmVUNEhqS0RSUmtHdkhBQm84L3B5TjV2eUEzeFktLWpMS0FQNFBlaGxqaFN5b1R1aU1mZ2c9PQ%3D%3D--40c777555309a740e1771f9aecb4ad6ce67cdf67;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=24b743ae-315a-4aa8-a50f-768b2fb23c8e; path=/; expires=Wed, 08 Feb
+        2017 00:34:35 -0000; secure
+      - ahoy_visitor=16ee5bab-d04e-4835-ae07-dde3d9afd6de; path=/; expires=Thu, 07
+        Feb 2019 20:34:35 -0000; secure
+      X-Request-Id:
+      - 3d77997d-8218-49b6-b440-b1d3af5a8002
+      X-Runtime:
+      - '0.757846'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"id":242634,"token":"4e5e260d-f14e-4e53-ac47-59135dfe0c8e","subject":"Part-Time
+        Foundation: Backend Web Development 21 - Programming Reinforcement: Checkpoint
+        3 discussion","updated_at":"2016-12-22T23:16:45.958Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"complete
+        3 exercises for this program","first_name":"Brittany","last_name":"Martin","page":null},{"id":247342,"token":"b64a4a9f-c6cf-4050-a0b7-846557bd09bb","subject":"On
+        a Plane Next Thursday","updated_at":"2016-12-05T17:20:34.138Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"Exactly!
+        I''ll send you a calendar invitation now.","first_name":"Brittany","last_name":"Martin","page":null},{"id":245372,"token":"d81c9a5b-8d08-4615-be64-ff9c4f203e39","subject":"New
+        Bloc Appointments -- Please Check!","updated_at":"2016-11-27T20:46:46.106Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"Greetings,
+        Students!\r\n\r\nI''m baaaaaaack and look...","first_name":"Brittany","last_name":"Martin","page":null},{"id":244902,"token":"9e4995cd-4f25-4137-b4ab-c2fd397d8d41","subject":"Appointment
+        Change Request Next Week for Kurt","updated_at":"2016-11-24T23:24:53.218Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"You
+        rule! Thank you!","first_name":"Brittany","last_name":"Martin","page":null},{"id":240003,"token":"74666505-cb82-4de0-b990-fb0e3eaa770d","subject":"Automatic
+        Bloc Freeze: Thanksgiving Week ","updated_at":"2016-11-07T22:21:39.011Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"Greetings,
+        students!\r\n\r\nI hope you all had a gr...","first_name":"Brittany","last_name":"Martin","page":null},{"id":232415,"token":"473bc04c-59d8-4a9b-aa2d-e934e03ebf35","subject":"Part-Time
+        Backend Programming Fundamentals 3 - Quiz: Ruby Programming Fundamentals discussion","updated_at":"2016-10-21T20:12:36.390Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"Well
+        done, Kurt!","first_name":"Brittany","last_name":"Martin","page":null},{"id":235182,"token":"2dea7d3e-7cc8-42ae-a364-67703fdfbef8","subject":"Greetings!","updated_at":"2016-10-21T18:11:08.967Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"Hi
+        Brittany,\n\n  Thanks for reaching out.  I''ll ...","first_name":"Brittany","last_name":"Martin","page":null},{"id":233789,"token":"ae251f30-086d-4fbb-80fc-9a7bc7e7c6a5","subject":"Changes
+        [Must Read]","updated_at":"2016-10-17T12:34:29.404Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/267/timothy-head-shot-1000.jpg?1423158110","preview":"To
+        my students,\r\n\r\nI have discussed this with s...","first_name":"Timothy","last_name":"Barnes","page":null},{"id":232069,"token":"d850919c-c695-4007-b01d-4f582c15534f","subject":"Part-Time
+        Foundation: Backend Web Development 4 - Address Bloc: Basic Ruby App discussion","updated_at":"2016-10-12T17:29:17.436Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/<MENTOR_ID>/unnamed.jpg?1422145878","preview":"`greeting`
+        = `ARGV.shift`\n\n`ARGV.each {|name| p...","first_name":"Brittany","last_name":"Martin","page":null},{"id":225452,"token":"601e34f1-b0e4-447e-b322-d63b23d4ad41","subject":"After
+        the Freeze!!","updated_at":"2016-09-19T17:01:44.068Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/267/timothy-head-shot-1000.jpg?1423158110","preview":"I
+        know that everyone''s scheduled appointment ti...","first_name":"Timothy","last_name":"Barnes","page":null}],"count":15}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 20:34:36 GMT
+recorded_with: VCR 3.0.3

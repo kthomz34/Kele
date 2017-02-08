@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 20:46:52 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"5d7fca0ee78513b5b3a671de296ac5eb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=ofaCd3GG9tDJ1C6XW4EOVgYXb2hAtD6W1V%2BfKGXOmFw%3D; path=/; secure
+      - _BlocAlpha_session2=azBCNTZ1K0lOWFRKaDhxQlBvcVNjWTBibVRzN0Z1bklEczBoWDZkMjhOQlpPT20rRVpPSXU1S3RWbnJzc1VlV3g0T3h1STErMjZ6dmZ0UU1pakFLWk1tZ1doTncvbFlwWXNPb1p0bFR5Y1phNFhvYW5lamgrNGhCL3hqTUZjcHpoQzAwZ0NiaWFhSlJqb25nRXIwaXJGUGtvSk9CcWloaWJ3R2pRUzNGZHhJZkRZM2J0UjF2SkxKSnlLMlFrdnpuZ3BoYy9hR3dWMGZ3T1dwdFZ2WDdXQT09LS16dEc1aFlBRHRLMWY3ZE5Qc1ZHR3ZRPT0%3D--89a2eb2b6e2c6a50caf45676df27ef989145fa2f;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=d9b66129-a0e3-4225-bcfa-b6472b80937f; path=/; expires=Wed, 08 Feb
+        2017 00:46:52 -0000; secure
+      - ahoy_visitor=4eede9aa-a542-4910-9afc-7adf71137447; path=/; expires=Thu, 07
+        Feb 2019 20:46:52 -0000; secure
+      X-Request-Id:
+      - 55bc7ff5-5d39-4d1b-8834-897a5e97eab3
+      X-Runtime:
+      - '0.105515'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY","user":{"id":2345150,"email":"kurt.thomas34@gmail.com","created_at":"2016-06-21T15:44:42.106-07:00","updated_at":"2017-02-07T12:34:36.072-08:00","facebook_id":null,"first_name":"Kurt","last_name":"Thomas","role":"user","stripe_customer_id":"cus_8gKGlmVjWBbRys","twitter_handle":"kthomz34","skype_handle":null,"github_handle":"kthomz34","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"image.jpg","photo_content_type":"image/jpeg","photo_file_size":950803,"photo_updated_at":"2016-07-05T10:27:23.247-07:00","send_new_message_emails":true,"referred_by_id":null,"slug":"kurt-thomas","os":"Windows","last_seen_at":"2017-02-07T12:34:36.002-08:00","private_profile":false,"google_plus_id":null,"linkedin":null,"quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5014,"phone_num":"(781)
+        718-4068","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"Agrund","birthdate":"1990-07-13","gender":"Male","first_visit_id":null,"codewars_handle":"kurt.thomas34"}}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 20:46:52 GMT
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/checkpoint_submissions
+    body:
+      encoding: UTF-8
+      string: assignment_branch=assignment-22-iterative-search&assignment_commit_link=https%3A%2Fgithub.com%2Fme%2Frepo%2Fcommit%2F5&checkpoint_id=1635&comment=this%20is%20my%20work&enrollment_id=11218
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiMzk1OTg3NDNiMmY5NDhkNmFlMWZiMTg1MDg2YWNiM2EiLCJ1c2VyX2lkIjoyMzQ1MTUwLCJuYW1lIjoiS3VydCBUaG9tYXMifQ.KzIUuofGhlNR9ApWCrUDrNj3ZHuIhKQvD_YHBdcscJY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 07 Feb 2017 20:46:52 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"84dd34fc0d538dbf266ae6f7f8973d2b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=vY0QQpzcqffFfMMlVfoMm%2FiJtYwBbxHRmOA%2BLGa1s%2BM%3D; path=/; secure
+      - _BlocAlpha_session2=Q2xabzRNYWFDM2dNVVdxT0RYUmI5dTRDdG5TTHVGOFNwVmlGaWRKSXBKOGxaRE5BSms2b09HVnBldDFFelJXM1IxVVNMSWx5Z3JTc09QcGR3dm52bkJMbVc3OHgwWVpMM1BUYjN3Q3VlWlBxMXBNbEtKa1V0Wm5tUlpiUkRqQmgzbUM2djF5VEw3M3l6VXY3SzYraHJiSkdteVBZKzhuektiU043Q0RjSDhlTXFBb095aEpzUXF2OXRiVmZPQjYxcnNWQVlKV0U1c0pmeFRDOXBaN2VaYjArQ0xuN213QjNVM2UrVFlxeUg0aXBVTE13dVdCbmhXVWM3WjBWR2M5TlFYQk1PWEdJeWF6QTJiMHNvVUhhVDByQXl6T1JEbWpJMmVuajA0RTRVUzZ1TlBOZ3ZaQ0RrN1pDdURiRmRReHktLXFBS3hWdnYwR3pBQ2FMNkdTNFd4aFE9PQ%3D%3D--aabe045057388d98c1159f0ee25237f7a38df32f;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=ae699eb3-e199-4752-a6f4-537ad6c2206f; path=/; expires=Wed, 08 Feb
+        2017 00:46:52 -0000; secure
+      - ahoy_visitor=f7f3efee-595f-43a0-87d2-0a2d8c4cabca; path=/; expires=Thu, 07
+        Feb 2019 20:46:52 -0000; secure
+      X-Request-Id:
+      - 09b322ca-8957-4577-b07d-aaa9a02f25e6
+      X-Runtime:
+      - '0.429072'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":158977,"status":"submitted","work_commit_link":null,"assignment_branch":"assignment-22-iterative-search","assignment_commit_link":"https:/github.com/me/repo/commit/5"}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 20:46:52 GMT
+recorded_with: VCR 3.0.3
